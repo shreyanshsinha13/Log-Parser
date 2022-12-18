@@ -19,26 +19,16 @@ pktmon etl2txt PktMon.etl --out <out_file>.txt"
 
 ## The parser
 The parser extract the following nine fields from the txt file and writes it to the output file in csv format.
-1. PktNumber
-2. Appearance
-3. Direction
-4. Type
-5. Component
-6. Edge
-7. Filter
-8. OriginalSize
-9. LoggedSize
-10. Source
-11. Destination
+1. PktGroupId
+2. PktNumber
+3. Appearance
+4. Direction
+5. Type
+6. Component
+7. Edge
+8. Filter
+9. OriginalSize
+10. LoggedSize
 
-## Execution
-To run the parser use the commands
-1. For compilation
-```
-g++ -o extract.out extract.cpp
-```
-2. For execution
-```
-./extract.out <input file(txt)> <output file(csv)>
 ```
 Note: There is a sample input file ```test.txt``` and the output file ```out.csv``` generated from it.
